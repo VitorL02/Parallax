@@ -1,0 +1,85 @@
+body,
+html 
+/* Utilizando o Html para englobar todo o documento no parallax */ {
+  margin: 0;
+  font: 16px "Lato", sans-serif;
+  color: #777;
+  /* Utilizando o height 100% e possivel utilizar o parallax */
+  height: 100%;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #111;
+  text-align: center;
+}
+p {
+  margin-bottom: 20px;
+}
+
+@font-face {
+  font-family: "PressStart2P";
+  src: url(../fonts/PressStart2P.woff);
+}
+
+.conteudo {
+  color: #777;
+  background-color: white;
+  text-align: justify;
+  padding: 50px 80px;
+}
+
+.caixa1,
+.caixa2,
+.caixa3,
+.caixa4,
+.caixa5 {
+  /* Necessario utilizar posição relativa para que os itens que estão dentro da caixa possam ser absolutos */
+  position: relative;
+  height: 100%;
+  background-repeat: no-repeat;
+  /* Cobre toda a area mesmo que a imagem não seja do tamanho da tela */
+  background-size: cover;
+  background-position: center;
+  /* Deixando a imagem fixa o efeito de paralax e feito */
+  background-attachment: fixed;
+}
+
+.caixa1 {
+  background-image: url(../assets/SCIFI-pixel.jpg);
+}
+
+.caixa2 {
+  background-image: url(../assets/Japan_pixel.jpg);
+}
+
+.caixa3 {
+  background-image: url(../assets/Forest_pixel.jpg);
+  opacity: 0.7;
+}
+.caixa4 {
+  background-image: url(../assets/City_pixel.jpg);
+}
+.caixa5 {
+  background-image: url(../assets/Montains_pixel.png);
+  opacity: 0.7;
+}
+
+/* Ocupando todo o conteudo em tela, utilizando o tex-align:center e possivel alinhar e o mesmo ficara sempre centralizado em tela */
+.conteudo-titulo {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  /* Faz a largura ocupar 100% da tela */
+  width: 100%;
+  text-align: center;
+}
+.conteudo-titulo span.titulo {
+  text-transform: uppercase;
+  color: white;
+  background-color: #111;
+  padding: 18px;
+  letter-spacing: 3px;
+  font-size: 25px;
+  font-family: "PressStart2P";
+}
