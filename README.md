@@ -40,5 +40,6 @@ Utilizando o Height de 100 % e alternando o background entre as DIVs o efeito pa
 <h1 align = "center">Progresso</h1>
 <h2 align="center"> 
 	🔋  Parallax 📱 <strong>Completo</strong> 🔋  
+	<p align = "center"> &copy-Todos os direitos Reservados aos respectivos donos das imagens-Esse projeto e apenas para estudo e sem fins lucrativos </p>
 </h2>
 <h1 align = "center">⚙️Version 1.0 ⚙️</h1>
